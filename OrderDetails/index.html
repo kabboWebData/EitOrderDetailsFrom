@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6eaf2;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header .logo {
+            width: 150px;
+            height: 60px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header .logo img {
+            max-width: 100%;
+        }
+
+        .header .company-info {
+            text-align: right;
+        }
+
+        .header .company-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .form-description {
+            margin-bottom: 20px;
+            color: #777;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .total-row {
+            text-align: right;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-group .input-half {
+            width: 48%;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .footer-note {
+            text-align: center;
+            color: #aaa;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <!-- Header Section -->
+        <div  class="header">
+            <div style="height:80px; width:100px; border-radius: 8px; " class="logo">
+                <img  src="essential.jpg" alt="Logo Here" />
+            </div>
+            <div class="company-info">
+                <p><strong>Essential Infotech</strong></p>
+                <p>Super House, Gareeb-e-Nawaz Ave, Dhaka 1230</p>
+                <p>essentialinfotect@gmail.com</p>
+                <p>www.essentialinfotech.com</p>
+                <p>(123) 1234567</p>
+            </div>
+        </div>
+
+        <!-- Form Title -->
+        <h1>Products Order Form</h1>
+        <p class="form-description">What are you interested in buying?</p>
+
+        <!-- Product List Table -->
+        <table>
+            <tr>
+                <th>Product List</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Product 1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Product 3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Product 4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Product 5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Product 6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <!-- Total Section -->
+        <div class="total-row">
+            Total: <input type="text" style="width: 100px; display: inline-block;"/>
+        </div>
+
+        <!-- User Details Section -->
+        <div class="input-group">
+            <div class="input-half">
+                <label for="first-name">Your Name</label>
+                <input type="text" id="first-name" placeholder="First Name"/>
+            </div>
+            <div class="input-half">
+                <label for="last-name">&nbsp;</label>
+                <input type="text" id="last-name" placeholder="Last Name"/>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="input-half">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="example@example.com"/>
+            </div>
+        </div>
+
+        <!-- Address Section -->
+        <div class="input-group">
+            <div class="input-half">
+                <label for="billing-address">Billing Address</label>
+                <textarea id="billing-address"></textarea>
+            </div>
+            <div class="input-half">
+                <label for="shipping-address">Shipping Address</label>
+                <textarea id="shipping-address"></textarea>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="footer-note">
+            Thank you for your order!
+        </div>
+    </div>
+</body>
+</html>
